@@ -8,6 +8,8 @@ def dnevnik(request):
 
     for student in students:
         print(student.surname)
+        print(student.name)
+        print(student.patronymic)
         for grade in grades:
             if student.id == grade.student.id:
                 print(str(grade.lesson) + " " + str(grade.student) + " " + str(grade.grade))
