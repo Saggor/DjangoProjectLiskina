@@ -21,6 +21,7 @@ from btest import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', views.index),
     path('dnevnik', views.dnevnik),
     path('schedule', views.schedule),
 ]

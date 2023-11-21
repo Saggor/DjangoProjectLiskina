@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+	{% load bootstrap5 %}
+	{% bootstrap_javascript %}
+	{% bootstrap_css %}
+	<title>Главная - Разделы электронного журнала</title>
+</head>
+<body class="m-3">
+
+<div class="col">
+    <div class="card-body text-center display-1 mb-5">ЭЛЕКТРОННЫЙ ЖУРНАЛ</div>
+    <div class="row h-80 align-items-center">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Оценки</h5>
+            <p class="card-text">Успеваемость учащихся</p>
+            <a href="/dnevnik" class="btn btn-primary">Открыть успеваемость учащихся</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Расписание</h5>
+            <p class="card-text">Расписание занятий</p>
+            <a href="/schedule" class="btn btn-primary">Открыть расписание</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+</body>
+</html>

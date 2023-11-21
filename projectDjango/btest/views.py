@@ -2,6 +2,9 @@ from django.shortcuts import render
 from .models import *
 
 
+def index(request):
+    return render(request, "btest/index.html")
+
 def dnevnik(request):
     grades = Grade.objects.all()
     students = Students.objects.all()
@@ -31,4 +34,3 @@ def schedule(request):
     return render(request, "btest/schedule.html", {
         'lessons': lessons,
     })
-
